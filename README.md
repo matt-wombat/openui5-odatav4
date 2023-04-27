@@ -33,6 +33,14 @@ As shown in the terminal after executing this command, the app is then running o
 
 (When using yarn, do `yarn start` instead.)
 
+## Run app without Mock Server
+
+In the `index.html` file, remove the line `data-sap-ui-oninit="module:sap/ui/core/tutorial/odatav4/initMockServer"`.
+
+This will lead to cross-origin resource sharing (CORS) problems. 
+
+For more information, see Request Fails Due to Same-Origin Policy (Cross-Origin Resource Sharing - CORS):
+https://sdk.openui5.org/topic/5bb388fc289d44dca886c8fa25da466e.html
 
 ## License
 
@@ -40,8 +48,8 @@ This project is licensed under the Apache Software License, version 2.0 except a
 
 ## Implemented Parts of the Tutorial
 
-* Step 1: The Initial App
-* Step 2: Data Access and Client-Server Communication
+* [Done] Step 1: The Initial App
+* [In Progress] Step 2: Data Access and Client-Server Communication
 * Step 3: Automatic Data Type Detection
 * Step 4: Filtering, Sorting, and Counting
 * Step 5: Batch Groups
