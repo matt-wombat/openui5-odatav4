@@ -40,3 +40,14 @@ This project is licensed under the Apache Software License, version 2.0 except a
 
 ## Implemented Parts of the Tutorial
 
+* Step 1: The Initial App
+* Step 2: Data Access and Client-Server Communication
+* Step 3: Automatic Data Type Detection
+* Step 4: Filtering, Sorting, and Counting
+* Step 5: Batch Groups
+* Step 6: Create and Edit
+* Step 7: Delete
+* Step 8: OData Operations
+* Step 9: List-Detail Scenario
+* Step 10: Enable Data Reuse
+* Step 11: Add Table with :n Navigation to Detail Area
