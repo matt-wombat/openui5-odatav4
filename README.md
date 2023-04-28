@@ -49,7 +49,7 @@ This project is licensed under the Apache Software License, version 2.0 except a
 ## Implemented Parts of the Tutorial
 
 * [Done] Step 1: The Initial App
-* [In Progress] Step 2: Data Access and Client-Server Communication
+* [Done] Step 2: Data Access and Client-Server Communication
 * Step 3: Automatic Data Type Detection
 * Step 4: Filtering, Sorting, and Counting
 * Step 5: Batch Groups
