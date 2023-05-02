@@ -51,7 +51,7 @@ This project is licensed under the Apache Software License, version 2.0 except a
 * [Done] Step 1: The Initial App
 * [Done] Step 2: Data Access and Client-Server Communication
 * [Done] Step 3: Automatic Data Type Detection
-* [InProgress] Step 4: Filtering, Sorting, and Counting
+* [Done] Step 4: Filtering, Sorting, and Counting
 * Step 5: Batch Groups
 * Step 6: Create and Edit
 * Step 7: Delete
