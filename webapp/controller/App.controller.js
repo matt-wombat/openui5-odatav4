@@ -16,13 +16,22 @@ sap.ui.define([
 		 *  Hook for initializing the controller
 		 */
 		onInit : function () {
-			var oJSONData = {
-					busy : false,
-          order: 0
-				},
-				oModel = new JSONModel(oJSONData);
+      var oMessageManager = sap.ui.getCore().getMessageManager();
+      var oMessageModel = oMessageManager.getMessageModel();
+      var oMessageModelBinding = oMessageModel.bindList("/", undefined, [],
+        new Filter("technical", FilterOperator.EQ, true));
+      var oViewModel = new JSONModel({
+        busy : false,
+        hasUIChanges: false,
+        usernameEmpty: true,
+        order: 0
+      });
+      
+      this.getView().setModel(oViewModel, "appView");
+      this.getView().setModel(oMessageModel, "message");
 
-			this.getView().setModel(oModel, "appView");
+      oMessageModelBinding.attachChange(this.onMessageBindingChange, this);
+      this._bTechnicalErrors = false;
 		},
 
     onRefresh: function() {
